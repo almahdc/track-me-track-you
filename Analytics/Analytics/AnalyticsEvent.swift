@@ -5,11 +5,13 @@
 //  Created by Alma Hodzic on 12.01.23.
 //
 
+//
+//  Contains all events that our system supports
+//
+
 import Foundation
 
-// contains all events that our system supports
-
-enum AnalyticsEvent {
+public enum AnalyticsEvent {
     case viewScreenViewed
 }
 

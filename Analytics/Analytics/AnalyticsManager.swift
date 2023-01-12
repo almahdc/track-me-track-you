@@ -5,19 +5,20 @@
 //  Created by Alma Hodzic on 12.01.23.
 //
 
-import Analytics
+//
+// Abstraction for direct dependency on AnalyticsEngine
+//
+
 import Foundation
 
-// send events to AnalyticsEngine
-
-final class AnalyticsManager {
+public final class AnalyticsManager {
     private let engine: AnalyticsEngine
     
-    init(engine: AnalyticsEngine) {
+    public init(engine: AnalyticsEngine) {
         self.engine = engine
     }
     
-    func log(_ event: AnalyticsEvent) {
+    public func log(_ event: AnalyticsEvent) {
         engine.track(named: event.name, metadata: event.metadata)
     }
 }

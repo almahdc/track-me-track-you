@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		7D5D96D329705BE9003094CC /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5D96D229705BE9003094CC /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D5D96DA29705BFE003094CC /* AnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D96D929705BFE003094CC /* AnalyticsEngine.swift */; };
+		7D5D96E1297062F6003094CC /* MixpanelAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D96E0297062F6003094CC /* MixpanelAnalyticsEngine.swift */; };
+		7D5D96E32970630B003094CC /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D96E22970630B003094CC /* AnalyticsManager.swift */; };
+		7D5D96E529706315003094CC /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5D96E429706315003094CC /* AnalyticsEvent.swift */; };
+		7D5D96EA2970647A003094CC /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 7D5D96E92970647A003094CC /* Mixpanel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D5D96CF29705BE9003094CC /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5D96D229705BE9003094CC /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		7D5D96D929705BFE003094CC /* AnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEngine.swift; sourceTree = "<group>"; };
+		7D5D96E0297062F6003094CC /* MixpanelAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelAnalyticsEngine.swift; sourceTree = "<group>"; };
+		7D5D96E22970630B003094CC /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		7D5D96E429706315003094CC /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5D96EA2970647A003094CC /* Mixpanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,10 +55,21 @@
 		7D5D96D129705BE9003094CC /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				7D5D96D929705BFE003094CC /* AnalyticsEngine.swift */,
 				7D5D96D229705BE9003094CC /* Analytics.h */,
+				7D5D96E429706315003094CC /* AnalyticsEvent.swift */,
+				7D5D96E22970630B003094CC /* AnalyticsManager.swift */,
+				7D5D96E729706413003094CC /* AnalyticsEngine */,
 			);
 			path = Analytics;
+			sourceTree = "<group>";
+		};
+		7D5D96E729706413003094CC /* AnalyticsEngine */ = {
+			isa = PBXGroup;
+			children = (
+				7D5D96D929705BFE003094CC /* AnalyticsEngine.swift */,
+				7D5D96E0297062F6003094CC /* MixpanelAnalyticsEngine.swift */,
+			);
+			path = AnalyticsEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +100,9 @@
 			dependencies = (
 			);
 			name = Analytics;
+			packageProductDependencies = (
+				7D5D96E92970647A003094CC /* Mixpanel */,
+			);
 			productName = Analytics;
 			productReference = 7D5D96CF29705BE9003094CC /* Analytics.framework */;
 			productType = "com.apple.product-type.framework";
@@ -108,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 7D5D96C529705BE9003094CC;
+			packageReferences = (
+				7D5D96E82970647A003094CC /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+			);
 			productRefGroup = 7D5D96D029705BE9003094CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5D96E32970630B003094CC /* AnalyticsManager.swift in Sources */,
+				7D5D96E529706315003094CC /* AnalyticsEvent.swift in Sources */,
+				7D5D96E1297062F6003094CC /* MixpanelAnalyticsEngine.swift in Sources */,
 				7D5D96DA29705BFE003094CC /* AnalyticsEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D5D96E82970647A003094CC /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D5D96E92970647A003094CC /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D5D96E82970647A003094CC /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D5D96C629705BE9003094CC /* Project object */;
 }

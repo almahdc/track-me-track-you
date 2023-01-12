@@ -5,9 +5,11 @@
 //  Created by Alma Hodzic on 12.01.23.
 //
 
-import Foundation
+//
+// Abstraction for concrete analytics engine to implement in order to do the actual tracking
+//
 
-// do the actual logging
+import Foundation
 
 public protocol AnalyticsEngine {
     func track(named name: String, metadata: [String : String])
