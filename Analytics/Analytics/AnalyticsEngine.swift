@@ -9,6 +9,6 @@ import Foundation
 
 // do the actual logging
 
-protocol AnalyticsEngine {
+public protocol AnalyticsEngine {
     func track(named name: String, metadata: [String : String])
 }

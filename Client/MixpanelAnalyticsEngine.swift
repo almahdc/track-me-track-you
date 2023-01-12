@@ -5,6 +5,7 @@
 //  Created by Alma Hodzic on 12.01.23.
 //
 
+import Analytics
 import Foundation
 import Mixpanel
 
