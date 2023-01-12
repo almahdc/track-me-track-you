@@ -8,22 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		7D66F95929701C5C00C3C510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F95829701C5C00C3C510 /* AppDelegate.swift */; };
-		7D66F95B29701C5C00C3C510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F95A29701C5C00C3C510 /* SceneDelegate.swift */; };
 		7D66F95D29701C5C00C3C510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F95C29701C5C00C3C510 /* ViewController.swift */; };
 		7D66F96029701C5C00C3C510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D66F95E29701C5C00C3C510 /* Main.storyboard */; };
 		7D66F96229701C6300C3C510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D66F96129701C6300C3C510 /* Assets.xcassets */; };
 		7D66F96529701C6300C3C510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D66F96329701C6300C3C510 /* LaunchScreen.storyboard */; };
+		7D66F96D29701F4100C3C510 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F96C29701F4000C3C510 /* AnalyticsManager.swift */; };
+		7D66F96F29701F5400C3C510 /* AnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F96E29701F5400C3C510 /* AnalyticsEngine.swift */; };
+		7D66F97429701FCD00C3C510 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F97329701FCD00C3C510 /* AnalyticsEvent.swift */; };
+		7D66F976297020B100C3C510 /* MixpanelAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F975297020B100C3C510 /* MixpanelAnalyticsEngine.swift */; };
+		7D66F9792970259D00C3C510 /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 7D66F9782970259D00C3C510 /* Mixpanel */; };
+		7D66F97B2970265D00C3C510 /* MixpanelBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D66F97A2970265D00C3C510 /* MixpanelBridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D66F95529701C5C00C3C510 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D66F95829701C5C00C3C510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D66F95A29701C5C00C3C510 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D66F95C29701C5C00C3C510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D66F95F29701C5C00C3C510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D66F96129701C6300C3C510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D66F96429701C6300C3C510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D66F96629701C6300C3C510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D66F96C29701F4000C3C510 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		7D66F96E29701F5400C3C510 /* AnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEngine.swift; sourceTree = "<group>"; };
+		7D66F97329701FCD00C3C510 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		7D66F975297020B100C3C510 /* MixpanelAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelAnalyticsEngine.swift; sourceTree = "<group>"; };
+		7D66F97A2970265D00C3C510 /* MixpanelBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelBridge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D66F9792970259D00C3C510 /* Mixpanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,43 @@
 		7D66F95729701C5C00C3C510 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				7D66F95829701C5C00C3C510 /* AppDelegate.swift */,
-				7D66F95A29701C5C00C3C510 /* SceneDelegate.swift */,
-				7D66F95C29701C5C00C3C510 /* ViewController.swift */,
-				7D66F95E29701C5C00C3C510 /* Main.storyboard */,
-				7D66F96129701C6300C3C510 /* Assets.xcassets */,
-				7D66F96329701C6300C3C510 /* LaunchScreen.storyboard */,
 				7D66F96629701C6300C3C510 /* Info.plist */,
+				7D66F96E29701F5400C3C510 /* AnalyticsEngine.swift */,
+				7D66F97329701FCD00C3C510 /* AnalyticsEvent.swift */,
+				7D66F96C29701F4000C3C510 /* AnalyticsManager.swift */,
+				7D66F975297020B100C3C510 /* MixpanelAnalyticsEngine.swift */,
+				7D66F97A2970265D00C3C510 /* MixpanelBridge.swift */,
+				7D66F97129701F8600C3C510 /* Config */,
+				7D66F97029701F5E00C3C510 /* Resources */,
+				7D66F97229701F9300C3C510 /* Screens */,
 			);
 			path = Analytics;
+			sourceTree = "<group>";
+		};
+		7D66F97029701F5E00C3C510 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D66F96329701C6300C3C510 /* LaunchScreen.storyboard */,
+				7D66F96129701C6300C3C510 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7D66F97129701F8600C3C510 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7D66F95829701C5C00C3C510 /* AppDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		7D66F97229701F9300C3C510 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7D66F95C29701C5C00C3C510 /* ViewController.swift */,
+				7D66F95E29701C5C00C3C510 /* Main.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = Analytics;
+			packageProductDependencies = (
+				7D66F9782970259D00C3C510 /* Mixpanel */,
+			);
 			productName = Analytics;
 			productReference = 7D66F95529701C5C00C3C510 /* Analytics.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = 7D66F94C29701C5C00C3C510;
+			packageReferences = (
+				7D66F9772970259D00C3C510 /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+			);
 			productRefGroup = 7D66F95629701C5C00C3C510 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D66F96D29701F4100C3C510 /* AnalyticsManager.swift in Sources */,
 				7D66F95D29701C5C00C3C510 /* ViewController.swift in Sources */,
+				7D66F97B2970265D00C3C510 /* MixpanelBridge.swift in Sources */,
 				7D66F95929701C5C00C3C510 /* AppDelegate.swift in Sources */,
-				7D66F95B29701C5C00C3C510 /* SceneDelegate.swift in Sources */,
+				7D66F97429701FCD00C3C510 /* AnalyticsEvent.swift in Sources */,
+				7D66F976297020B100C3C510 /* MixpanelAnalyticsEngine.swift in Sources */,
+				7D66F96F29701F5400C3C510 /* AnalyticsEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +335,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5766G66EC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Analytics/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,11 +362,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5766G66EC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Analytics/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D66F9772970259D00C3C510 /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D66F9782970259D00C3C510 /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D66F9772970259D00C3C510 /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D66F94D29701C5C00C3C510 /* Project object */;
 }
