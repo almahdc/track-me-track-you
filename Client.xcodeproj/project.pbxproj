@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7D66F95529701C5C00C3C510 /* Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D66F95529701C5C00C3C510 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D66F95829701C5C00C3C510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D66F95C29701C5C00C3C510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D66F95F29701C5C00C3C510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		7D66F94C29701C5C00C3C510 = {
 			isa = PBXGroup;
 			children = (
-				7D66F95729701C5C00C3C510 /* Analytics */,
+				7D66F95729701C5C00C3C510 /* Client */,
 				7D66F95629701C5C00C3C510 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		7D66F95629701C5C00C3C510 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D66F95529701C5C00C3C510 /* Analytics.app */,
+				7D66F95529701C5C00C3C510 /* Client.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D66F95729701C5C00C3C510 /* Analytics */ = {
+		7D66F95729701C5C00C3C510 /* Client */ = {
 			isa = PBXGroup;
 			children = (
 				7D66F96629701C6300C3C510 /* Info.plist */,
@@ -76,7 +76,7 @@
 				7D66F97029701F5E00C3C510 /* Resources */,
 				7D66F97229701F9300C3C510 /* Screens */,
 			);
-			path = Analytics;
+			path = Client;
 			sourceTree = "<group>";
 		};
 		7D66F97029701F5E00C3C510 /* Resources */ = {
@@ -108,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D66F95429701C5C00C3C510 /* Analytics */ = {
+		7D66F95429701C5C00C3C510 /* Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D66F96929701C6300C3C510 /* Build configuration list for PBXNativeTarget "Analytics" */;
+			buildConfigurationList = 7D66F96929701C6300C3C510 /* Build configuration list for PBXNativeTarget "Client" */;
 			buildPhases = (
 				7D66F95129701C5C00C3C510 /* Sources */,
 				7D66F95229701C5C00C3C510 /* Frameworks */,
@@ -120,12 +120,12 @@
 			);
 			dependencies = (
 			);
-			name = Analytics;
+			name = Client;
 			packageProductDependencies = (
 				7D66F9782970259D00C3C510 /* Mixpanel */,
 			);
 			productName = Analytics;
-			productReference = 7D66F95529701C5C00C3C510 /* Analytics.app */;
+			productReference = 7D66F95529701C5C00C3C510 /* Client.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7D66F95029701C5C00C3C510 /* Build configuration list for PBXProject "Analytics" */;
+			buildConfigurationList = 7D66F95029701C5C00C3C510 /* Build configuration list for PBXProject "Client" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D66F95429701C5C00C3C510 /* Analytics */,
+				7D66F95429701C5C00C3C510 /* Client */,
 			);
 		};
 /* End PBXProject section */
@@ -337,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K5766G66EC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Analytics/Info.plist;
+				INFOPLIST_FILE = Client/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -364,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K5766G66EC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Analytics/Info.plist;
+				INFOPLIST_FILE = Client/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -385,7 +385,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7D66F95029701C5C00C3C510 /* Build configuration list for PBXProject "Analytics" */ = {
+		7D66F95029701C5C00C3C510 /* Build configuration list for PBXProject "Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D66F96729701C6300C3C510 /* Debug */,
@@ -394,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D66F96929701C6300C3C510 /* Build configuration list for PBXNativeTarget "Analytics" */ = {
+		7D66F96929701C6300C3C510 /* Build configuration list for PBXNativeTarget "Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D66F96A29701C6300C3C510 /* Debug */,
