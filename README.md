@@ -1,3 +1,3 @@
 # track-me-track-you
 
-Small Analytics module and it's usage with Mixpanel
+Small Analytics module and its usage with Mixpanel
